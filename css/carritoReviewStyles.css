@@ -1,0 +1,478 @@
+.carrito {
+    padding-top: 46px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+    .carrito-main {
+        margin-bottom: 83px;
+        display: flex;
+        flex-direction: row;
+        gap: 48px;
+    }
+
+        .carritoP-main-L {
+            width: 795px;
+            display: block;
+        }
+
+            .review-sections {
+                padding: 33px;
+                border: 1px solid #E2E8F0;
+                border-radius: 10px;
+                background-color: #FFFFFF;
+            }
+
+                .review-header {
+                    margin-bottom: 21px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 12px;
+                }
+
+                    .review_title {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        color: #0F172A;
+                    }
+
+                .review-obtain {
+                    margin-bottom: 31px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    padding: 0 52px;
+                }
+
+                    .review-obtain-top {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 24px;
+                    }
+
+                    .review-obtain-top-left,
+                    .review-obtain-top-right {
+                        padding: 25px;
+                        width: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        border: 1px solid #C3C5D8;
+                        border-radius: 10px;
+                    }
+
+                        .review-obtain-top-header {
+                            margin-bottom: 18px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+
+                            .review-obtain_title {
+                                font-weight: 700;
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: #191B24;
+                            }
+                            .review-obtain_change {
+                                cursor: pointer;
+
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                color: var(--main-color);
+                            }
+
+                        .review-obtain-top-left-list {
+                            margin-bottom: 7.4px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #434655;
+                        }
+                            .review-obtain-top-left-list_title {
+                                font-weight: 700;
+                                color: #191B24;
+                            }
+
+                        .review-obtain-top-right-container {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 16px;
+
+                            margin-bottom: 15px;
+                            padding-bottom: 15px;
+                            border-bottom: 1px solid #C3C5D8;
+                        }
+
+                            .review-obtain-top-right-container_img {
+                                width: 48px;
+                                height: 32px;
+                                padding: 8px 14px;
+                                border-radius: 5px;
+                                background-color: #F2870D1A;
+                            }
+                            .review-obtain-top-right-container_card {
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 22.4px;
+                                color: #191B24;
+                            }
+                            .review-obtain-top-right-container_date {
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 14.4px;
+                                color: #434655;
+                            }
+
+                        .review-obtain-top-right_subtitle{
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 14.5px;
+                            letter-spacing: 0.6px;
+                            color: #434655;
+                        }
+                        .review-obtain-top-right_txt {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 22.5px;
+                            color: #191B24;
+                        }
+                    
+                    .review-obtained-bottom {
+                        padding: 25px;
+                        width: 624px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        border: 1px solid #C3C5D8;
+                        border-radius: 10px;
+                    }
+
+                        .review-obtained-bottom-container {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 16px;
+                        }
+                        .review-obtained-bottom_img {
+                            padding: 16px 13px;
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 50%;
+                            background-color: #F2870D33;
+                        }
+                        .review-obtained-bottom-info {
+                            margin: 0;
+                        }
+                            .review-obtained-bottom-info_txt,
+                            .review-products-item_details {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 22.4px;
+                                color: #434655;
+                            }
+
+                .review-products {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    padding: 0 52px;
+                }
+
+                    .review-products-item {
+                        padding: 25px;
+                        width: 624px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        border: 1px solid #C3C5D8;
+                        border-radius: 10px;
+                    }
+
+                        .review-products-item-container{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 24px;
+                        }
+                        .review-products-item_img {
+                            width: 96px;
+                            height: 128px;
+                            border-radius: 10px;
+                            object-fit: cover;
+                        }
+                        .review-products-item_price,
+                        .review-products-item_name {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #191B24;
+                        }
+                        .review-products-item_info {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                            .review-products-item_available {
+                                margin-top: 19px;
+                                width: 80px;
+                                padding-left: 20px;
+
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 14.4px;
+                                color: #434655;
+
+                                background-image: url("../img/carritoPage_icon/reviewTank.svg");
+                                background-repeat: no-repeat;
+                                background-position: 1px 1px;
+                            }
+
+
+
+            .carritoP-main-L-btn {
+                margin-top: 39px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .review-btn_back {
+                    position: relative;
+                    margin-left: 50px;
+
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #64748B;
+                }
+                
+                    .review-btn_back::before {
+                        position: absolute;
+                        
+                        content: url(../img/carritoPage_icon/arrowBack_icon.svg);
+                        top: 2.5px;
+                        right: 145px;
+                    }
+                    .review-btn_back:hover.review-btn_back::before{
+                        animation: arrowmoveReview 1s infinite linear;
+                    }
+
+                    @keyframes arrowmoveReview {
+                        0% {
+                            transform: translateX(0px);
+                        }
+                
+                        50% {
+                            transform: translateX(-10px);
+                        }
+                        
+                        100% {
+                            transform: translateX(0px);
+                        }
+                    }
+
+                .review-btn_next {
+                    padding: 17px 76px 17px 44px;
+
+                    text-decoration: none;
+                    text-transform: uppercase;     
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: "Manrope", sans-serif;
+                
+                    border: none;
+                    border-radius: 10px;
+                    color: #FFFFFF;
+                    background-color: var(--btn-bgColor);
+
+                    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s linear;
+
+                    background-image: url(../img/carritoPage_icon/arrowNext_icon.svg);
+                    background-repeat: no-repeat;
+                    background-position: 225px;
+                }
+
+                    .review-btn_next:hover {
+                        background-color: var(--btn-bgColorHover);
+                        transform: scale(1.05);
+                    }
+
+        .carrito-main-R {
+            width: 373px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .review-summary {
+            padding: 33px;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0px 8px 10px 0px #0000001A;
+        }
+
+            .review-summary_title {
+                padding-bottom: 32px;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 32px;
+                color: #0F172A;
+            }
+
+            .review-summary-list {
+                padding-bottom: 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                border-bottom: 1px solid #E2E8F0;
+            }
+
+                .review-summary-list-item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+
+                    .review-summary-list-item_txt {
+                        font-weight: 400;
+                        color: #475569;
+                    }
+                    .review-summary-list-item_price {
+                        color: #0F172A;
+                    }
+                    .review-summary-list-item_special {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: 0.6px;
+                        color: #16A34A;
+                    }
+
+            .review-summary-total {
+                margin-top: 15px;
+                margin-bottom: 61px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+                .review-summary-total_txt {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #0F172A;
+                }
+                .review-summary-total_price {
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 40px;
+                    color: #F2870D;
+                }
+
+            .review-summary_btn {
+                padding: 20.5px 61px;
+
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                font-family: "Manrope", sans-serif;
+            
+                border: none;
+                border-radius: 10px;                
+                color: #FFFFFF;
+                background-color: var(--btn-bgColor);
+                box-shadow: 0px 12px 15px 0px #0D59F233;
+                transition: all 0.3s linear;
+            }
+                .review-summary_btn:hover {
+                    background-color: var(--btn-bgColorHover);
+                    transform: scale(1.025);
+                }
+
+            .review-summary_txt {
+                margin-top: 51px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                color: #434655;
+            } .review-summary_txt strong {
+                color: var(--main-color);
+                text-decoration: underline;
+            }
+            
+
+            .carrito-main-R-protect {
+                padding: 81px 43px 25px 43px;
+                position: relative;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 18px;
+
+                border: 1px solid #F2870D33;
+                border-radius: 10px;
+                background-color: #F2870D0D;
+            }
+
+                .carrito-main-R-protect::after {
+                    position: absolute;
+
+                    content: url(../img/carritoPage_icon/protect_icon1.svg);
+                    bottom: 116px;
+                    left: 147px;
+                }
+                .carrito-main-R-protect::before {
+                    position: absolute;
+
+                    content: url(../img/carritoPage_icon/protect_icon2.svg);
+                    bottom: 116px;
+                    left: 199px;
+                }
+
+                .carrito-main-R-protect_txt {
+                    text-align: center;
+                    width: 288px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #475569;
+                }
+
+                .carrito-main-R-protect_extra {
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--main-color);
+                }
+                
+                    .carrito-main-R-protect_extra::before {
+                        position: absolute;
+                        left: -33px;
+                        content: url(../img/carritoPage_icon/help_icon.svg);
+                    }

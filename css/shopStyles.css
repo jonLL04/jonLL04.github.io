@@ -1,0 +1,584 @@
+.shop {
+    padding: 0 24px;
+}
+
+    .shop-info {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+        .shop-info_title {
+            margin-bottom: 8px;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 48px;
+            color: #0F172A;
+        }
+
+        .shop-info_txt {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #475569;
+        }        
+
+            .shop-info-selector_content {
+                padding-left: 17px;
+                width: 224px;
+                height: 54px;
+                appearance: none;
+    
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                font-family: "Manrope", sans-serif;
+            
+                border: 1px solid #E2E8F0;
+                border-radius: 10px;            
+                color: #0F172A;
+                background-color: #FFFFFF;
+
+                background-image: url(../img/arrow_more.svg);
+                background-repeat: no-repeat;
+                background-position-x: 188px;
+                background-position-y: 22px;
+            }
+
+                .shop-info-selector_content:focus {
+                    border: 2px solid var(--main-color);
+                    border-radius: 10px;
+                    outline: none;
+                }
+
+            .shop-info-selector_txt {
+                padding-right: 16px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #64748B;
+            }
+
+    .shop-main {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+        .shop-main-filters {
+            width: 318px;
+        }
+
+            .shop-main-filters_title {
+                margin-bottom: 24px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #0F172A;
+            }
+
+            /*custom secret*/
+
+            .isHidden {
+                display: none;
+            }
+
+            .secret {
+                padding: 25px;
+                margin-bottom: 40px;
+                border: 1px solid #F2870D33;
+                border-radius: 10px;
+                background-color: #F2870D0D;
+            }
+
+                .secret-top {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    margin-bottom: 16px;
+                }
+
+                    .secret-top_title {
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 28px;
+                        color: #0F172A;
+                    }
+
+                    .secret-top_clean {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--main-color);
+                        cursor: pointer;
+                    }               
+
+                .secret-bottom {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 8px;
+
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #0F172A;
+                }
+
+                    .secret-bottom_selected {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 7px 13px 8px 13px;
+                        border: 1px solid #E2E8F0;
+                        border-radius: 30px;
+                        background-color: #FFFFFF;
+                    }
+
+                    .secret-bottom_selected img {
+                        margin-left: 8px;
+                    }
+
+            /*Custom range*/
+
+                #id_range {
+                    width: 302px;
+
+                    cursor: pointer;
+                    accent-color: var(--main-color);
+                    outline: none;
+                    border-radius: 20px;
+                    background: transparent;
+                    /*overflow: hidden;*/
+                }
+                
+                #id_range::-webkit-slider-runnable-track {
+                    height: 8px;
+                    background: transparent;
+                    border-radius: 20px;
+                }
+
+                .shop-main-filters_range::-webkit-slider-thumb {
+                    width: 20px;
+                    height: 20px;
+                    margin-top: -3px;
+                }
+                
+                /*#id_range::-webkit-slider-thumb {                    
+                    background-color: #F2870D;
+                    border-radius: 50%;
+                    box-shadow: -207px 0 0 200px #F2870D;
+                }*/
+
+                /*Para firefox al parecer necesito poner esto*/
+                #id_range::-moz-range-track {
+                    height: 8px;
+                    background-color: #E2E8F0;
+                    border-radius: 20px;
+                }                
+                #id_range::-moz-range-progress {
+                    height: 8px;
+                    background-color: var(--main-color);
+                    border-radius: 20px;
+                }
+
+            .shop-main-filters_minmax {
+                margin-top: 16px;
+                padding: 0px 18px 0 2px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #64748B;
+            }
+
+            .shop-main-filters_price {
+                margin-bottom: 40px;
+                padding: 0px 16px 0 1px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                color: #0F172A;
+            }
+
+            /*Size costum*/
+
+            .size-container {
+                width: 318px;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .filter_size {
+                display: none;
+            }
+
+                .size-container label {
+                    width: 100px;
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    
+                    border: 1px solid #E2E8F0;
+                    border-radius: 10px;
+            
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+
+                    color: #0F172A;
+                    background-color: #F5F6F8;
+                }
+    
+                .filter_size:checked + label {
+                    border: 2px solid #f59e0b;
+                    color: #f59e0b;
+                    background-color: #F2870D0D;
+                }
+
+            /*Custom color*/
+
+                .shop-main-filters-color {
+                    width: 318px;
+                    margin-bottom: 40px;
+                }
+
+                .shop-main-color-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    list-style: none;
+                    gap: 16px 42px;
+                    padding: 0;
+                }                
+
+                    [class*="color-custom"] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: var(--bg-color);
+                        cursor: pointer;
+                        border: 2px solid #FFFFFF;
+                        vertical-align: middle;
+                    }
+
+                    .color-custom_special {
+                        border: 2px solid #E2E8F0;
+                    }
+                
+                        [class*="color-custom"]:checked {
+                            outline: 3px solid #007bff;
+                            outline-offset: 1px;
+                            box-shadow: 0 0 0 4px white;
+                        }
+
+                        .shop-main-color-list_item_1 {
+                            --bg-color: #0F172A;
+                        }
+
+                        .shop-main-color-list_item_2 {
+                            --bg-color: #FFFFFF;
+                        }
+
+                        .shop-main-color-list_item_3 {
+                            --bg-color: #8B4513;
+                        }
+
+                        .shop-main-color-list_item_4 {
+                            --bg-color: #2F4F4F;
+                        }
+
+                        .shop-main-color-list_item_5 {
+                            --bg-color: #F5F5DC;
+                        }
+
+                        .shop-main-color-list_item_6 {
+                            --bg-color: #4682B4;
+                        }
+
+            /*Custom material*/
+
+                .shop-main-filters_item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+                }
+            
+                .shop-main-filters-material_name {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #0F172A;
+                }
+
+                .shop-main-filters-material_box {
+                    width: 24px;
+                    height: 24px;
+                }
+
+                .shop-main-filters-material_box:checked {
+                    filter: hue-rotate(170deg);
+                }
+
+
+        .shop-main-merch {
+            margin-bottom: 129px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
+
+            .shop-main-merch-products {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 32px;
+            }
+
+                .shop-main-merch-products-item {
+                    width: 323px;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                }
+
+                    .shop-main-merch-products-item_img {
+                        height: 431px;
+                        margin-bottom: 23px;
+
+                        border: none;
+                        border-radius: 10px;                        
+                        object-fit: cover;
+                    }                    
+
+                    [class*="extra-info"] {
+                        position: absolute;
+                        top: 10px;
+                        left: 16px;
+
+                        padding: 6px 12px;
+
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 1.4px;
+                        text-transform: uppercase;
+
+                        border-radius: 5px;
+                        color: #FFFFFF;
+                        background-color: #FF5A1F;
+                    }
+
+                        .extra-info_special {
+                            background-color: var(--main-color);
+                        }
+
+                        .shop-main-merch-products-item [class*="extra-info"] {
+                            transition: all 0.3s linear;
+                        }
+
+                        .shop-main-merch-products-item:hover [class*="extra-info"] {
+                            transform: scale(1.1);
+                        }
+
+                    .shop-main-merch-products-item_info {
+                        margin-bottom: 11px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+
+                        .shop-main-merch-products-item_title {
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 25px;
+                            color: #0F172A;
+                        }
+
+                        .shop-main-merch-products-item_price {
+                            font-weight: 800;
+                            font-size: 20px;
+                            line-height: 28px;
+                            color: var(--main-color);
+                        }
+
+                    .shop-main-merch-products-item_txt {
+                        margin-bottom: 17px;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #64748B;
+                    }
+
+                    .shop-main-merch-products-item-color {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 8px;
+
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #94A3B8;
+                    }
+
+                        [class*="shop-main-merch-products-item-color_"] {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                        }
+                        
+                        .shop-main-merch-products-item-color_1 {
+                            border: 1px solid #CBD5E1;
+                            background-color: #F5F5DC;
+                        }
+                        
+                        .shop-main-merch-products-item-color_2 {
+                            background-color: #0F172A;
+                        }
+                        
+                        .shop-main-merch-products-item-color_3 {
+                            background-color: #4682B4;
+                        }
+
+                        .shop-main-merch-products-item-color_4 {
+                            background-color: #2F4F4F;
+                        }
+
+                        .shop-main-merch-products-item-color_5 {
+                            background-color: #8B4513;
+                        }
+
+                        .shop-main-merch-products-item-color_6 {
+                            border: 1px solid #CBD5E1;
+                            background-color: #FFFFFF;
+                        }
+
+                        .shop-main-merch-products-item-color_7 {
+                            background-color: #94A3B8;
+                        }
+
+                        .shop-main-merch-products-item-color_8 {
+                            background-color: #334155;
+                        }
+
+                        .shop-main-merch-products-item-color_9 {
+                            background-color: #F2870D;
+                        }
+
+
+
+            .shop-main-merch-more {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 24px;
+            }
+
+                .shop-main-merch-more_btn {
+                    width: 289px;
+                    height: 68px;
+        
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-family: "Manrope", sans-serif;;
+                
+                    border: none;
+                    border-radius: 10px;
+                
+                    color: #FFFFFF;
+                    background-color: var(--btn-bgColor);
+
+    
+                    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+                    transition: all 0.3s linear;
+                }
+
+                    .shop-main-merch-more_btn:hover {
+                        background-color: var(--btn-bgColorHover);
+                        transform: scale(1.05);
+                    }
+
+                    .disabled {
+                        background-color: #65707e;
+                    }
+                    .disabled:hover {
+                        background-color: #65707e;
+                        transform: scale(1);
+                    }
+
+                .shop-main-merch-more_showed {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+                }
+
+                    .shop-main-merch-more_info {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #0F172A;
+                    }
+
+                    .shop-main-merch-more-pagination {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+
+                        width: 256px;
+                        height: 8px;
+                        border-radius: 20px;
+                        background-color: #E2E8F0;
+                    }
+
+                        [class*="filled_"] {
+                            width: 26px;
+                            height: 8px;
+                        }
+
+                        .filled_start {
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            background-color: var(--main-color);
+                        }
+
+                        [class*="filled_rest"] {
+                            background-color: var(--main-color);
+                        }
+
+                        .filled_end {
+                            border-top-right-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            background-color: var(--main-color);
+                        }

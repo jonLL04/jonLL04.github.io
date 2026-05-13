@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBRANTMODA - Payment</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/globalStyles.css">
+    <link rel="stylesheet" href="css/carritoStyles.css">
+    <link rel="stylesheet" href="css/carritoShippingStyles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#"><img src="img/logo.png" alt="logo de la pagina web"></a>
+
+        <nav class="header-menu">
+            <a href="index.html" class="header-menu_a">Men</a>
+            <a href="shop.html" class="header-menu_a">Women</a>
+            <a href="detail.html" class="header-menu_a">Our History</a>
+            <a href="carrito.html" class="inPage header-menu_a">Sustainability</a>
+        </nav>
+
+        <ul class="header-resources">
+            <li><a href="#" title="Search icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
+                    <path d="M3.32812 9.70312C4.20312 10.5781 5.26562 11.0156 6.51562 11.0156C7.76562 11.0156 8.82812 10.5781 9.70312 9.70312C10.5781 8.82812 11.0156 7.76562 11.0156 6.51562C11.0156 5.26562 10.5781 4.20312 9.70312 3.32812C8.82812 2.45312 7.76562 2.01562 6.51562 2.01562C5.26562 2.01562 4.20312 2.45312 3.32812 3.32812C2.45312 4.20312 2.01562 5.26562 2.01562 6.51562C2.01562 7.76562 2.45312 8.82812 3.32812 9.70312ZM12.5156 11.0156L17.4844 15.9844L15.9844 17.4844L11.0156 12.5156V11.7188L10.7344 11.4375C9.54688 12.4688 8.14062 12.9844 6.51562 12.9844C4.70312 12.9844 3.15625 12.3594 1.875 11.1094C0.625 9.85938 0 8.32812 0 6.51562C0 4.70312 0.625 3.17188 1.875 1.92188C3.15625 0.640625 4.70312 0 6.51562 0C8.32812 0 9.85938 0.640625 11.1094 1.92188C12.3594 3.17188 12.9844 4.70312 12.9844 6.51562C12.9844 7.17188 12.8281 7.92188 12.5156 8.76562C12.2031 9.57812 11.8438 10.2344 11.4375 10.7344L11.7188 11.0156H12.5156Z" fill="#475569"/>
+                </svg>
+            </a></li>
+            <li><a href="#" title="Account icon">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
+                    <path d="M8.01562 1.92188C9.1875 1.92188 10.125 2.85938 10.125 4.03125C10.125 5.15625 9.1875 6.09375 8.01562 6.09375C6.84375 6.09375 5.90625 5.15625 5.90625 4.03125C5.90625 2.85938 6.84375 1.92188 8.01562 1.92188ZM8.01562 10.9219C10.9688 10.9219 14.1094 12.375 14.1094 13.0312V14.1094H1.92188V13.0312C1.92188 12.375 5.0625 10.9219 8.01562 10.9219ZM8.01562 0C5.8125 0 4.03125 1.82812 4.03125 4.03125C4.03125 6.23438 5.8125 8.01562 8.01562 8.01562C10.2188 8.01562 12 6.23438 12 4.03125C12 1.82812 10.2188 0 8.01562 0ZM8.01562 9C5.34375 9 0 10.3594 0 13.0312V16.0312H16.0312V13.0312C16.0312 10.3594 10.6875 9 8.01562 9Z" fill="#475569"/>
+                </svg>                    
+            </a></li>
+            <li class="hover">
+                <a href="#" title="Shop-Cart icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
+                        <path d="M14.5781 10.9688C15.3281 10.9688 15.9844 10.5938 16.3125 9.9375L19.875 3.46875C20.25 2.8125 19.7812 1.96875 19.0312 1.96875H4.21875L3.28125 0H0V1.96875H2.01562L5.625 9.5625L4.26562 12C3.51562 13.3594 4.5 15 6 15H18V12.9844H6L7.125 10.9688H14.5781ZM5.15625 3.98438H17.3437L14.5781 9H7.54687L5.15625 3.98438ZM6 15.9844C4.92187 15.9844 4.03125 16.875 4.03125 18C4.03125 19.0781 4.92187 19.9688 6 19.9688C7.125 19.9688 8.01562 19.0781 8.01562 18C8.01562 16.875 7.125 15.9844 6 15.9844ZM16.0312 15.9844C14.9062 15.9844 14.0156 16.875 14.0156 18C14.0156 19.0781 14.9062 19.9688 16.0312 19.9688C17.1094 19.9688 18 19.0781 18 18C18 16.875 17.1094 15.9844 16.0312 15.9844Z" fill="#F2870D"/>
+                    </svg>
+                    <span class="header-resources_number">0</span>
+                </a>
+                <div class="cartContainer">
+                    <h3 class="cartContainer_title">Shopping Cart (3 items)</h3>
+                    <ul class="cartContainer-products">
+                        <li class="cartContainer-products-item">
+                            <img src="img/clothes/carritoprueba2.png" alt="Blazer in the summary" class="cartContainer-products_img">
+                            <div class="cartContainer-products-info">
+                                <h4 class="cartContainer-products-info_name">Merino Wool Blazer</h4>
+                                <span class="cartContainer-products-info_extra">Size: M • Color: Navy</span>
+                                <span class="cartContainer-products-info_price">$245.00</span>
+                            </div>
+                            <span class="cartContainer-products_remove">Remove</span>
+                        </li>
+                        <li class="cartContainer-products-item">
+                            <img src="img/clothes/carritoprueba1.png" alt="Blazer in the summary" class="cartContainer-products_img">
+                            <div class="cartContainer-products-info">
+                                <h4 class="cartContainer-products-info_name">Essential White Tee</h4>
+                                <span class="cartContainer-products-info_extra">Size: M • Color: Navy</span>
+                                <span class="cartContainer-products-info_price">$245.00</span>
+                            </div>
+                            <span class="cartContainer-products_remove">Remove</span>
+                        </li>
+                    </ul>
+                    <div class="cartContainer-bottom">
+                        <div class="cartContainer-bottom-total">
+                            <span class="cartContainer-bottom-total_txt">Subtotal:</span>
+                            <span class="cartContainer-bottom-total_price">$419.92</span>
+                        </div>
+                        <a href="carritoShipping.html" class="cartContainer-bottom_btn">Checkout</a>
+                        <a href="shoppingBag.html" class="cartContainer-bottom_toCart">View Cart</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <main class="carrito">
+        <nav class="carrito-top">
+            <ol class="carrito-top-list">
+                <li class="carrito-top-list-item">
+                    <a href="carritoShipping.html" class="carrito-top-list-item-a">
+                        <span class="carrito-top-list-item-a_number_1">1</span>
+                        <span class="carrito-top-list-item-a_name_allbar">Shipping</span>
+                    </a>
+                </li>
+                <li class="carrito-top-list-item">
+                    <a href="carrito.html" class="carrito-top-list-item-a">
+                        <span class="carrito-top-list-item-a_number_2">2</span>
+                        <span class="carrito-top-list-item-a_name_onbar">Payment</span>
+                    </a>
+                </li>
+                <li class="carrito-top-list-item">
+                    <a href="carritoReview.html" class="carrito-top-list-item-a">
+                        <span class="carrito-top-list-item-a_number_3">3</span>
+                        <span class="carrito-top-list-item-a_name_withoutbar">Review</span>
+                    </a>
+                </li>
+            </ol>
+        </nav>
+
+        <form action="#" method="get" class="carrito-main">
+            <section class="carritoP-main-L">
+                <div class="carritoP-main-L-sections">
+                    <div class="carritoP-main-L-section-header">
+                        <h1 class="carritoP-main-L-section_title">Payment Method</h1>
+                        <span class="carritoP-main-L-section-header_extra">secure</span>
+                    </div>
+
+                    <div class="carritoP-main-L-section-payments">
+                        <div class="carritoP-main-L-section-payments-container">
+                            <input type="radio" name="payment" id="id_visa" class="pay_method" checked>
+                            <label for="id_visa" class="payment_option">
+                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment_svg">
+                                    <path d="M18 0H1.96875C0.890625 0 0 0.890625 0 2.01562V14.0156C0 15.1406 0.890625 16.0312 1.96875 16.0312H18C19.0781 16.0312 19.9688 15.1406 19.9688 14.0156V2.01562C19.9688 0.890625 19.0781 0 18 0ZM18 14.0156H1.96875V8.01562H18V14.0156ZM18 4.03125H1.96875V2.01562H18V4.03125Z" fill="#94A3B8"/>
+                                </svg>                                    
+                                <span class="payment_option_title">Credit Card</span>
+                                <span class="payment_option_txt">Visa, Mastercard, Amex</span>
+                            </label>
+                        </div>
+
+                        <div class="carritoP-main-L-section-payments-container">
+                            <input type="radio" name="payment" id="id_paypal" class="pay_method">
+                            <label for="id_paypal" class="payment_option">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment_svg">
+                                    <path d="M18 4.26562V2.01562C18 0.890625 17.1094 0 15.9844 0H2.01562C0.890625 0 0 0.890625 0 2.01562V15.9844C0 17.1094 0.890625 18 2.01562 18H15.9844C17.1094 18 18 17.1094 18 15.9844V13.7344C18.6094 13.3594 18.9844 12.75 18.9844 12V6C18.9844 5.25 18.6094 4.64062 18 4.26562ZM17.0156 6V12H9.98438V6H17.0156ZM2.01562 15.9844V2.01562H15.9844V3.98438H9.98438C8.90625 3.98438 8.01562 4.92188 8.01562 6V12C8.01562 13.0781 8.90625 14.0156 9.98438 14.0156H15.9844V15.9844H2.01562ZM11.4844 9C11.4844 8.15625 12.1875 7.5 12.9844 7.5C13.8281 7.5 14.4844 8.15625 14.4844 9C14.4844 9.84375 13.8281 10.5 12.9844 10.5C12.1875 10.5 11.4844 9.84375 11.4844 9Z" fill="#94A3B8"/>
+                                </svg>
+                                <span class="payment_option_title">PayPal</span>
+                                <span class="payment_option_txt">Faster checkout</span>
+                            </label>
+                        </div>
+                        
+                        <div class="carritoP-main-L-section-payments-container">
+                            <input type="radio" name="payment" id="id_apple" class="pay_method">
+                            <label for="id_apple" class="payment_option">
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="payment_svg">
+                                    <path d="M12.6359 17.2969C11.6515 18.2344 10.5734 18.0938 9.54214 17.625C8.46401 17.1563 7.43276 17.1563 6.30776 17.625C4.85464 18.2344 4.10464 18.0469 3.26089 17.2969C-1.61411 12.2344 -0.910986 4.59376 4.62026 4.31251C5.97964 4.35938 6.91714 5.06251 7.71401 5.10938C8.88589 4.87501 10.0109 4.17188 11.2765 4.26563C12.7765 4.40626 13.9015 4.96876 14.6515 6.04688C11.5578 7.92188 12.3078 12.0469 15.1671 13.2188C14.6046 14.7188 13.8546 16.1719 12.6359 17.2969ZM7.62026 4.26563C7.43276 2.01563 9.26089 0.187508 11.3234 7.62939e-06C11.6515 2.57813 9.02651 4.50001 7.62026 4.26563Z" fill="#94A3B8"/>
+                                </svg>                                    
+                                <span class="payment_option_title">Apple Pay</span>
+                                <span class="payment_option_txt">One-touch payment</span>
+                            </label>
+                        </div>    
+                    </div>
+
+                    <div class="carritoP-main-L-section-form">
+                        <label class="carritoP-main-L-section-form_name" for="Cardholder-Name">Cardholder Name</label>
+                        <input class="carritoP-main-L-section-form_box" id="Cardholder-Name" name="name" type="text" placeholder="Johnathan Doe">
+                    </div>
+
+                    <div class="carritoP-main-L-section-form">
+                        <label class="carritoP-main-L-section-form_name" for="card_number">Card Number</label>
+                        <input class="carritoP-main-L-section-form_box_credit" id="card_number" name="Number" type="tel" placeholder="0000 0000 0000 0000" maxlength="16" minlength="16">
+                    </div>
+
+                    <div class="carritoP-main-L-section-together">
+                        <div class="carritoP-main-L-section-form">
+                            <label class="carritoP-main-L-section-form_name" for="id_expiry">Expiry Date</label>
+                            <input class="carritoP-main-L-section-form_box_together_date" type="text" id="id_expiry" name="date" placeholder="MM / YY" maxlength="4" minlength="4">
+                        </div>
+                        <div class="carritoP-main-L-section-form">
+                            <label for="password" class="carritoP-main-L-section-form_name">CVV</label>
+                            <input class="carritoP-main-L-section-form_box_together_help" id="password" name="password" type="password" placeholder="***" maxlength="4" minlength="3">
+                        </div>
+                    </div>
+
+                    <div class="error">
+                        <span class="error_title">Invalid Security Code</span>
+                        <p class="error_txt">Please check the 3 or 4 digit code on the back of your card.</p>
+                    </div>
+                    
+                    <div class="carritoP-main-L-section-save">
+                        <input class="carritoP-main-L-section-save_box" type="checkbox" name="saveCheckbox" id="id_save" checked>
+                        <label for="id_save">Save this card for future purchases</label>
+                    </div>
+                </div>
+                <div class="carritoP-main-L-sections_">
+                    <div class="carritoP-main-L-section-superior">
+                        <h2 class="carritoP-main-L-section_title">Billing Address</h2>
+                        <div class="carritoP-main-L-section_shipping">
+                            <input type="checkbox" name="checkbox" id="id_billing" checked>
+                            <label for="id_billing">Same as shipping</label>
+                        </div>
+                    </div>
+                    <div class="carritoP-main-L-section-inferior">
+                        <h3 class="carritoP-main-L-section-inferior_name">Michael Anderson</h3>
+                        <p class="carritoP-main-L-section-inferior_direction">1230 Oakwood Avenue, Apt 4B San Francisco, CA 94107</p>
+                    </div>
+                </div>
+                <div class="carritoP-main-L-btn">
+                    <a href="carritoShipping.html" class="carritoP-main-L-btn_back">Back to Shipping</a>
+                    <button type="submit" class="carritoP-main-L-btn_next">Continue to review</button>
+                </div>
+            </section>
+
+            <aside class="carrito-main-R">
+                <div class="carrito-main-R-summary">
+                    <h3 class="carrito-main-R-summary_title">Order Summary (2)</h3>
+                    <ul class="carrito-main-R-summary-product">
+                        <li class="carrito-main-R-summary-product-item">
+                            <img src="img/clothes/summary_clothe1.png" alt="Blazer in the summary" class="carrito-main-R-summary-product_img">
+                            <div class="carrito-main-R-summary-product_info">
+                                <h4 class="carrito-main-R-summary-product_title">Classic Wool Blazer</h4>
+                                <span class="carrito-main-R-summary-product_txt">Navy / Large</span>
+                                <span class="carrito-main-R-summary-product_price">$289.00</span>
+                            </div>
+                        </li>
+                        <li class="carrito-main-R-summary-product-item">
+                            <img src="img/clothes/summary_clothe2.png" alt="Polo in the summary" class="carrito-main-R-summary-product_img">
+                            <div class="carrito-main-R-summary-product_info">
+                                <h4 class="carrito-main-R-summary-product_title">Premium Pima Polo</h4>
+                                <span class="carrito-main-R-summary-product_txt">White / Large</span>
+                                <span class="carrito-main-R-summary-product_price">$85.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ol class="carrito-main-R-summary-info">
+                        <li class="carrito-main-R-summary-info_item">
+                            <span>Subtotal</span>
+                            <span>$374.00</span>
+                        </li>
+                        <li class="carrito-main-R-summary-info_item">
+                            <span>Shipping (Express)</span>
+                            <span>$15.00</span>
+                        </li>
+                        <li class="carrito-main-R-summary-info_item">
+                            <span>Estimated Tax</span>
+                            <span>$30.92</span>
+                        </li>
+                    </ol>
+                    <div class="carrito-main-R-summary_total">
+                        <span>Total</span>
+                        <span>$419.92</span>
+                    </div>
+                </div>
+
+                <div class="carrito-main-R-protect">
+                    <p class="carrito-main-R-protect_txt">Your transaction is protected by 256-bit SSL encryption. We never share your data.</p>
+                    <span class="carrito-main-R-protect_extra">Need help? Chat with us</span>
+                </div>
+            </aside>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-superior">
+            <div class="footer-superior_col">
+                <h2 class="footer-superior-titulo">VIBRANT<strong>MODA</strong></h2>
+                <address class="footer-superior_col_content">
+                    <p class="txt_footer">Redefining luxury through sustainability and timeless craftsmanship for the modern professional.</p>
+                </address>
+                <ul class="footer-superior_redes">
+                    <li class="footer-superior_redes_bg_camera">
+                        <a href="#" title="link a red social"></a>
+                    </li>
+                    <li class="footer-superior_redes_bg_fc">
+                        <a href="#" title="link a red social"></a>
+                    </li>
+                    <li class="footer-superior_redes_bg_businnes">
+                        <a href="#" title="link a red social"></a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-superior_col">
+                <h2 class="footer-superior-titulo">Shopping</h2>
+                <ul class="footer-superior_col_content">
+                    <li><a href="shop.html">Women's Collection</a></li>
+                    <li><a href="index.html">Men's Collection</a></li>
+                    <li><a href="shop.html">Sale & Outlet</a></li>
+                    <li><a href="index.html">Personal Styling</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-superior_col">
+                <h2 class="footer-superior-titulo">Customer Care</h2>
+                <ul class="footer-superior_col_content">
+                    <li><a href="detail.html">Size Guide</a></li>
+                    <li><a href="index.html">Returns & Exchanges</a></li>
+                    <li><a href="shop.html">Shipping Information</a></li>
+                    <li><a href="carrito.html">Track Your Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-superior_col">
+                <h2 class="footer-superior-titulo">Stay Updated</h2>
+                <p class="form_txt">Join our newsletter for exclusive early access and luxury lifestyle content.</p>
+                <form action="#" method="post" class="footer-superior_form">
+                    <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Email Address" class="form_email" aria-label="Write your email">
+                    <button type="submit" class="form_button">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-inferior">
+            <div class="footer-copy">
+                <p>© 2026 EliteWear Luxury Ltd. All rights reserved.</p>
+            </div>
+
+            <nav class="footer-inferior-menu">
+                <a href="index.html" class="footer-inferior-menu_a">Privacy Policy</a>
+                <a href="about.html" class="footer-inferior-menu_a">Terms of Service</a>
+                <a href="shop.html" class="footer-inferior-menu_a">Accessibility</a>
+            </nav>            
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/globalJss.js"></script>
+    <script src="js/carritoJss.js"></script>
+</body>
+
+</html>
