@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A100 · Gestión de estados en notificaciones mediante clases</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/A100_styles.css">
+</head>
+
+<body class="page page--notifications">
+
+  <header class="site-header">
+    <p class="site-header__eyebrow">Curso de JavaScript · DOM</p>
+  </header>
+
+  <main class="layout layout--notifications">
+
+    <section class="notifications-section" aria-labelledby="notifications-title">
+
+      <header class="notifications-section__header">
+        <p class="eyebrow eyebrow--accent">Centro de actividad</p>
+        <h1 id="notifications-title" class="notifications-section__title">Notificaciones</h1>
+        <p class="notifications-section__intro">Gestiona el estado de las notificaciones utilizando clases CSS desde JavaScript.</p>
+      </header>
+
+      <ul class="notification-list" aria-label="Listado de notificaciones">
+
+        <!-- NOTIFICACIÓN 1 -->
+        <li class="card card--notification notification">
+          <article class="notification__content">
+            <p class="notification__meta">Hace 5 minutos</p>
+
+            <h2 class="notification__title">Nueva solicitud de contacto</h2>
+
+            <p class="notification__text">Has recibido un mensaje desde el formulario principal del sitio web.</p>
+
+            <button class="button button--ghost notification__button" type="button" title="Revisar notificación">Revisar</button>
+          </article>
+        </li>
+
+        <!-- NOTIFICACIÓN 2 -->
+        <li class="card card--notification notification">
+          <article class="notification__content">
+            <p class="notification__meta">Hace 20 minutos</p>
+
+            <h2 class="notification__title">Actualización del portafolio</h2>
+
+            <p class="notification__text">Se ha publicado una nueva versión del proyecto visual en producción.</p>
+
+            <button class="button button--ghost notification__button" type="button" title="Ver cambios">Ver cambios</button>
+          </article>
+        </li>
+
+        <!-- NOTIFICACIÓN 3 -->
+        <li class="card card--notification notification">
+          <article class="notification__content">
+            <p class="notification__meta">Hoy · 09:30</p>
+
+            <h2 class="notification__title">Recordatorio de revisión</h2>
+
+            <p class="notification__text">Tienes pendiente revisar los textos de accesibilidad antes de publicar.</p>
+
+            <button class="button button--ghost notification__button" type="button" title="Abrir tarea">Abrir tarea</button>
+          </article>
+        </li>
+
+        <!-- NOTIFICACIÓN 4 -->
+        <li class="card card--notification notification">
+          <article class="notification__content">
+            <p class="notification__meta">Ayer · 18:10</p>
+
+            <h2 class="notification__title">Nuevo comentario del cliente</h2>
+
+            <p class="notification__text">El cliente ha dejado feedback sobre la versión enviada del componente.</p>
+
+            <button class="button button--ghost notification__button" type="button" title="Leer comentario">Leer comentario</button>
+          </article>
+        </li>
+
+      </ul>
+
+    </section>
+
+  </main>
+  <script src="js/A100_functions.js"></script>
+</body>
+
+</html>

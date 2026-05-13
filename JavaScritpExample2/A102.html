@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A102 · Gestión interactiva de tareas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/A102_styles.css">
+</head>
+
+<body class="page page--tasks">
+    <header class="site-header">
+        <p class="site-header__eyebrow">Curso de JavaScript · DOM</p>
+    </header>
+
+    <main class="layout layout--tasks">
+        <section class="tasks-section" aria-labelledby="tasks-title">
+            <header class="tasks-section__header">
+                <p class="eyebrow eyebrow--accent">Actividad integradora</p>
+                <h1 id="tasks-title" class="tasks-section__title">Gestión interactiva de tareas</h1>
+                <p class="tasks-section__intro">Trabaja con una lista de tareas combinando selección de elementos, eventos, clases CSS y creación de nuevos nodos en el DOM.</p>
+            </header>
+
+            <section class="card card--panel task-panel" aria-label="Panel de tareas">
+                <header class="task-panel__header">
+                    <h2 class="task-panel__title">Tareas pendientes</h2>
+                </header>
+
+                <form class="task-form" action="#" method="post">
+                    <label class="task-form__label" for="new-task">Nueva tarea</label>
+                    <div class="task-form__controls">
+                        <input class="task-form__input" type="text" id="new-task" name="new-task" placeholder="Escribe una nueva tarea">
+                        <button class="button button--primary task-form__button" type="button">Añadir tarea</button>
+                    </div>
+                </form>
+
+                <ul class="task-list" aria-label="Listado de tareas">
+                    <li class="task-list__item task-item">
+                        <span class="task-item__text">Revisar contenidos de la unidad</span>
+                        <div class="task-item__actions">
+                            <button class="button button--ghost task-item__highlight-button" type="button">Destacar</button>
+                            <button class="button button--ghost task-item__delete-button" type="button">Eliminar</button>
+                        </div>
+                    </li>
+
+                    <li class="task-list__item task-item">
+                        <span class="task-item__text">Preparar ejemplos para clase</span>
+                        <div class="task-item__actions">
+                            <button class="button button--ghost task-item__highlight-button" type="button">Destacar</button>
+                            <button class="button button--ghost task-item__delete-button" type="button">Eliminar</button>
+                        </div>
+                    </li>
+
+                    <li class="task-list__item task-item">
+                        <span class="task-item__text">Actualizar ejercicios del bloque DOM</span>
+                        <div class="task-item__actions">
+                            <button class="button button--ghost task-item__highlight-button" type="button">Destacar</button>
+                            <button class="button button--ghost task-item__delete-button" type="button">Eliminar</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/A102_functions.js"></script>
+</body>
+
+</html>

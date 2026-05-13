@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A108 · Control del envío y lectura de datos</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <main class="page">
+            <section class="contact-card">
+                <div class="contact-card__header">
+                    <p class="contact-card__eyebrow">Contacto</p>
+                    <h1 class="contact-card__title">Hablemos de tu proyecto</h1>
+                    <p class="contact-card__intro">
+                        Completa el formulario y revisaremos tu consulta lo
+                        antes posible.
+                    </p>
+                </div>
+
+                <form class="contact-form" novalidate>
+                    <div class="contact-form__group">
+                        <label class="contact-form__label"
+                            for="name">Nombre</label>
+                        <input
+                            class="contact-form__input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Introduce tu nombre">
+                        <p class="contact-form__error" id="error-name"></p>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="email">Correo
+                            electrónico</label>
+                        <input
+                            class="contact-form__input"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Introduce tu correo electrónico">
+                        <p class="contact-form__error" id="error-email"></p>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label class="contact-form__label" for="topic">Motivo de
+                            la consulta</label>
+                        <select class="contact-form__select" id="topic"
+                            name="topic">
+                            <option value>Selecciona una opción</option>
+                            <option value="presupuesto">Presupuesto</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="colaboracion">Colaboración</option>
+                        </select>
+                        <p class="contact-form__error" id="error-topic"></p>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label class="contact-form__label"
+                            for="message">Mensaje</label>
+                        <textarea
+                            class="contact-form__textarea"
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
+                        <p class="contact-form__error" id="error-message"></p>
+                    </div>
+
+                    <div class="contact-form__actions">
+                        <button class="contact-form__button"
+                            type="submit">Enviar consulta</button>
+                    </div>
+
+                    <div class="contact-form__feedback"
+                        id="form-feedback"></div>
+                </form>
+            </section>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
