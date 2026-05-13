@@ -1,0 +1,151 @@
+.shop {
+    padding-bottom: 12px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shop-categories {
+    padding-top: 48px;
+    padding-left: 35px;
+    width: 330px;
+}
+
+    .shop-categories_title {
+        font-size: 30px;
+        padding-bottom: 33px;
+    }
+
+    .shop-categories_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+    }
+
+        .shop-categories_content_item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .shop-categories_content_name {
+                font-size: 22px;
+            }
+
+            .checkbox-round {
+                width: 22px;
+                height: 22px;
+                background-color: white;
+                border-radius: 50%;
+                vertical-align: middle;
+                border: 1px solid #ddd;
+                appearance: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .checkbox-round:checked {
+                background-image: url("../img/checked.svg");
+            } 
+
+
+.shop-merch {
+    margin-left: 24px;
+    width: calc(100% - 330px);
+    display: flex;
+    flex-direction: column;
+}
+
+    .shop-merch-header {
+        padding: 49px 36px 28px 7px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+        .shop-merch_input {
+            width: 453px;
+            height: 36px;
+            padding-left: 8px;
+            font: 400 16px "Roboto";
+    
+            color: #212529;
+        }
+
+        .shop-merch-gender {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            color: #212529;
+        }
+
+            .shop-merch-gender a {
+                font-size: 22px;
+                color: #212529;
+            }
+
+    .shop-merch-products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 28px;
+    }
+
+        .shop-merch-products-item-box {
+            /*width: 306px;
+            height: 550px;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .shop-merch-products-item-box_info_txt {
+            margin: 20px 0px 7px 17px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+            .shop-merch-products-item-box_rating {
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+            }
+
+            .shop-merch-products-item-box_price {
+                margin: 9px 0px 17px 0px;
+            }
+
+    .shop-merch-page {
+        margin: 24px 24px 64px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+        .shop-merch-page_number {
+            width: 10px;
+            height: 22px;
+            text-align: center;
+            font-weight: 100;
+            
+            background-color: #FFFFFF;
+            border-width: 0px 1px 1px 1px;
+            border-style: solid;            
+            border-color: #DEE2E6;
+            padding: 15px 25px 15px 25px;
+
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+        }
+
+            .shop-merch-page_number a {
+                color: #212529;
+            }
+
+        .shop-merch-page_number:hover {
+            background-color: #69BB7E;
+            color: #FFFFFF;
+        }

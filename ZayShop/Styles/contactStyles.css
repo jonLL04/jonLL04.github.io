@@ -1,0 +1,79 @@
+.contac-info {
+    padding: 40px 15px 70px 15px;
+
+    background-color: #E9EEF5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.contac-info_title {
+    font-size: 48px;
+    font-weight: 400px;
+    color: #212529;
+}
+
+.contac-info_text {
+    font-size: 18px;
+    color: #212529;
+}
+
+.contact-location {
+    background-color: #DDDDDD;
+}
+
+.contact-location_map {
+    width: 100%;
+}
+
+.contact-form-content {
+    margin: 80px 200px 80px 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contact-form-content_data {
+    padding-bottom: 20px;
+    width: 990px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.contact-form-content_data_name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact-form-content_data_label{
+    padding-bottom: 5px;
+}
+
+.contac-input {
+    width: 469px;
+}
+
+.contac-input_subject {
+    width: 964px;
+}
+
+.contact-form-content_button {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    
+    font: 300 20px 'Roboto';
+    color: #fff;
+    background-color: #376D45;  /* se cambio el color con respecto al figma por el tema de la accesibilidad*/
+
+    cursor: pointer;
+}
