@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActividadEspecial</title>
+
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <header class="header-info">
+            <span class="header-info_extra">Educational Resource</span>
+            <h1 class="header-info_title">Standard Form Elements Guide</h1>
+            <p class="header-info_txt">A clean reference for web development students to learn about standard HTML form elements in their neutral, default state.</p>
+        </header>
+        <img src="img/header_icon.png" alt="container" class="header_img">
+    </section>
+
+    <form action="#" method="get" class="form error">
+
+        <div class="form-head">
+            <h2 class="form-head_title">Neutral State Reference v1.0</h2>
+            <ul class="form-head_list">
+                <li>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="12" rx="6" fill="#334155"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="12" rx="6" fill="#334155"/>
+                    </svg>
+                </li>
+                <li>
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="12" height="12" rx="6" fill="#334155"/>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <h2 class="forms_title_one">Section 1: Basic Inputs</h2>
+
+            <div class="form-section-together">
+                <div class="form-section-content">
+                    <label for="name" class="form-section-content_name">Full Name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Alex Johnson" required class="form-section-content_box_together">
+                </div>
+    
+                <div class="form-section-content">
+                    <label for="email" class="form-section-content_name">Email Address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com" required class="form-section-content_box_together">
+                </div>
+            </div>
+
+
+            <div class="form-section-content">
+                <label for="password" class="form-section-content_name">Security Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" placeholder="Enter a secure password" required class="form-section-content_box">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="forms_title_two">Section 2: Selection Elements</h2>
+
+            <div class="form-section-content">
+                <h3 class="form-section-content_name">Preferred Language</h3>
+                <select name="language" aria-label="select language" class="form-section-content_box_option">
+                    <option>Select your language</option>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>German</option>
+                    <option>French</option>
+                </select>
+            </div>
+
+            <div class="form-section-together_special">
+                <div class="form-section-content">
+                    <h3 class="form-section-content_name">Gender Identity</h3>
+                    <div class="form-section-content-checks">
+                        <input id="female" type="radio" name="ciclo">
+                        <label for="female" class="form-section-content-checks_name">Female</label>
+                    </div>
+                    <div class="form-section-content-checks">
+                        <input id="male" type="radio" name="ciclo">
+                        <label for="male" class="form-section-content-checks_name">Male</label>
+                    </div>
+                    <div class="form-section-content-checks">
+                        <input id="non-binary" type="radio" name="ciclo">
+                        <label for="non-binary" class="form-section-content-checks_name">Non-binary</label>
+                    </div>
+                </div>
+    
+                <div class="form-section-content">
+                    <h3 class="form-section-content_name">Programming Interests</h3>
+                    <div class="form-section-content-checks">
+                        <input id="checkbox1" type="checkbox" name="checkbox1">
+                        <label for="checkbox1" class="form-section-content-checks_name">Frontend Architecture</label>
+                    </div>
+                    <div class="form-section-content-checks">
+                        <input id="checkbox2" type="checkbox" name="checkbox2">
+                        <label for="checkbox2" class="form-section-content-checks_name">Backend APIs</label>
+                    </div>
+                    <div class="form-section-content-checks">
+                        <input id="checkbox3" type="checkbox" name="checkbox3">
+                        <label for="checkbox3" class="form-section-content-checks_name">Data Science</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-section">
+            <h2 class="forms_title_three">Section 3: Advanced States</h2>
+
+            <div class="form-section-together">
+                <div class="form-section-content">
+                    <label for="id_fecha" class="form-section-content_name">Birth: Date</label>
+                    <input class="form-section-content_box_together" type="date" id="id_fecha" name="date"/>
+                </div>
+    
+                <div class="form-section-content">
+                    <label for="id_range" class="form-section-content_name">Proficiency Level</label>
+                    <input class="form-section-content_range" type="range" min="0" max="100" value="50" name="range" id="id_range">
+                    <ul class="form-section-content-list">
+                        <li class="form-section-content-list_item">Novice</li>
+                        <li class="form-section-content-list_item">Mid-Level</li>
+                        <li class="form-section-content-list_item">Expert</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-section-content">
+                <h3 class="form-section-content_name">Student Portfolio File</h3>
+                <div class="drop-container">
+                    <label for="file-input">
+                        <input type="file" id="file-input" accept="image/*" required>
+                        <span class="drop-title">or drag and drop</span>
+                    </label>
+                    <span class="drop-container_extra">PDF, DOCX or ZIP up to 10MB</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2 class="forms_title_four">Section 4: Multiline Text</h2>
+
+            <div class="form-section-content">
+                <label for="id_message" class="form-section-content_name">Additional Project Notes</label>
+                <div class="form-section-content-extra">
+                    <textarea id="id_message" name="message" class="form-section-content-extra_textarea" rows="5" cols="99" placeholder="Describe your project goals or specific challenges you've faced..." required></textarea>
+                    <span class="form-section-content-extra_limit">0 / 500 characters</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-btn">
+            <button type="reset" class="form-btn_reset">Reset Form</button>
+            <input type="button" class="form-btn_save" id="bt" value="Save Profile" onclick="saveFile()"/>
+        </div>
+    </form>
+</body>
+
+</html>
