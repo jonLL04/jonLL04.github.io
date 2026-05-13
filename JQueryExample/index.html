@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>MiLanding | Proyecto Legacy JS</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="#" class="site-header__logo">
+            MiLanding
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#inicio">Inicio</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#servicios">Servicios</a>
+                </li>
+
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="theme-button" id="themeButton" type="button">
+            Cambiar modo
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio" aria-labelledby="heroTitle">
+            <article class="hero__content">
+                <p class="hero__label">
+                    Proyecto de práctica
+                </p>
+
+                <h1 class="hero__title" id="heroTitle">
+                    Bienvenido a MiLanding
+                </h1>
+
+                <p class="hero__text" id="heroText">
+                    Creamos experiencias simples, claras y memorables
+                    para proyectos digitales.
+                </p>
+
+                <button class="button" id="changeTextButton" type="button">
+                    Cambiar texto
+                </button>
+            </article>
+
+            <figure class="hero__media" aria-label="Ilustración decorativa">
+                <span class="hero__sun" aria-hidden="true"></span>
+
+                <span class="hero__mountain hero__mountain--one" aria-hidden="true"></span>
+
+                <span class="hero__mountain hero__mountain--two" aria-hidden="true"></span>
+            </figure>
+        </section>
+
+        <section class="services" id="servicios" aria-labelledby="servicesTitle">
+            <header class="section-header">
+                <h2 class="section-header__title" id="servicesTitle">
+                    Servicios
+                </h2>
+
+                <button class="button button--secondary" id="toggleServicesButton" type="button">
+                    Mostrar / ocultar sección
+                </button>
+            </header>
+
+            <ul class="services__list" id="servicesList">
+                <li class="services__item">
+                    <article class="service-card">
+                        <h3 class="service-card__title">
+                            Diseño
+                        </h3>
+
+                        <p class="service-card__text">
+                            Interfaces bonitas, claras y fáciles de usar.
+                        </p>
+                    </article>
+                </li>
+
+                <li class="services__item">
+                    <article class="service-card">
+                        <h3 class="service-card__title">
+                            Desarrollo
+                        </h3>
+
+                        <p class="service-card__text">
+                            Maquetación responsive y código mantenible.
+                        </p>
+                    </article>
+                </li>
+
+                <li class="services__item">
+                    <article class="service-card">
+                        <h3 class="service-card__title">
+                            Soporte
+                        </h3>
+
+                        <p class="service-card__text">
+                            Acompañamiento durante todo el proceso.
+                        </p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact" id="contacto" aria-labelledby="contactTitle">
+            <h2 class="contact__title" id="contactTitle">
+                Contacto
+            </h2>
+
+            <form class="contact-form" id="contactForm">
+                <p class="contact-form__field">
+                    <label class="contact-form__label" for="message">
+                        Déjanos tu mensaje
+                    </label>
+
+                    <textarea class="contact-form__textarea" id="message" name="message" maxlength="120"
+                        placeholder="Escribe aquí..."></textarea>
+                </p>
+
+                <p class="contact-form__counter">
+                    <span id="characterCounter">0</span> / 120
+                </p>
+
+                <button class="button contact-form__button" type="submit">
+                    Enviar
+                </button>
+            </form>
+
+            <p class="feedback" id="feedbackMessage" hidden>
+                ¡Mensaje enviado! Te responderemos pronto.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">
+            Proyecto Legacy JS · Actividad de conversión a jQuery
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app-jquery.js"></script>
+</body>
+
+</html>
