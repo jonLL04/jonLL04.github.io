@@ -1,285 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIBRANTMODA - Home</title>
+    <title>Mi Pagina Web</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/globalStyles.css">
-    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/styles.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a href="#"><img src="img/logo.png" alt="logo de la pagina web"></a>
-
+        <a class="header-link" href="https://www.youtube.com/@JonLinaje/videos">
+            <img class="header-link_img" src="img/Youtube.svg" alt="Imagen con el logo de Youtube">
+        </a>
         <nav class="header-menu">
-            <a href="index.html" class="inPage header-menu_a">Men</a>
-            <a href="shop.html" class="header-menu_a">Women</a>
-            <a href="detail.html" class="header-menu_a">Our History</a>
-            <a href="carrito.html" class="header-menu_a">Sustainability</a>
+            <a class="header-menu_item" href="#inicio">Inicio</a>
+            <a class="header-menu_item" href="#inicio">Premio</a>
+            <a class="header-menu_item" href="#inicio">Estudios</a>
         </nav>
-
-        <ul class="header-resources">
-            <li><a href="#" title="Search icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
-                    <path d="M3.32812 9.70312C4.20312 10.5781 5.26562 11.0156 6.51562 11.0156C7.76562 11.0156 8.82812 10.5781 9.70312 9.70312C10.5781 8.82812 11.0156 7.76562 11.0156 6.51562C11.0156 5.26562 10.5781 4.20312 9.70312 3.32812C8.82812 2.45312 7.76562 2.01562 6.51562 2.01562C5.26562 2.01562 4.20312 2.45312 3.32812 3.32812C2.45312 4.20312 2.01562 5.26562 2.01562 6.51562C2.01562 7.76562 2.45312 8.82812 3.32812 9.70312ZM12.5156 11.0156L17.4844 15.9844L15.9844 17.4844L11.0156 12.5156V11.7188L10.7344 11.4375C9.54688 12.4688 8.14062 12.9844 6.51562 12.9844C4.70312 12.9844 3.15625 12.3594 1.875 11.1094C0.625 9.85938 0 8.32812 0 6.51562C0 4.70312 0.625 3.17188 1.875 1.92188C3.15625 0.640625 4.70312 0 6.51562 0C8.32812 0 9.85938 0.640625 11.1094 1.92188C12.3594 3.17188 12.9844 4.70312 12.9844 6.51562C12.9844 7.17188 12.8281 7.92188 12.5156 8.76562C12.2031 9.57812 11.8438 10.2344 11.4375 10.7344L11.7188 11.0156H12.5156Z" fill="#475569"/>
-                </svg>
-            </a></li>
-            <li><a href="#" title="Account icon">
-                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
-                    <path d="M8.01562 1.92188C9.1875 1.92188 10.125 2.85938 10.125 4.03125C10.125 5.15625 9.1875 6.09375 8.01562 6.09375C6.84375 6.09375 5.90625 5.15625 5.90625 4.03125C5.90625 2.85938 6.84375 1.92188 8.01562 1.92188ZM8.01562 10.9219C10.9688 10.9219 14.1094 12.375 14.1094 13.0312V14.1094H1.92188V13.0312C1.92188 12.375 5.0625 10.9219 8.01562 10.9219ZM8.01562 0C5.8125 0 4.03125 1.82812 4.03125 4.03125C4.03125 6.23438 5.8125 8.01562 8.01562 8.01562C10.2188 8.01562 12 6.23438 12 4.03125C12 1.82812 10.2188 0 8.01562 0ZM8.01562 9C5.34375 9 0 10.3594 0 13.0312V16.0312H16.0312V13.0312C16.0312 10.3594 10.6875 9 8.01562 9Z" fill="#475569"/>
-                </svg>                    
-            </a></li>
-            <li class="hover">
-                <a href="#" title="Shop-Cart icon">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="header-resources_svg">
-                        <path d="M14.5781 10.9688C15.3281 10.9688 15.9844 10.5938 16.3125 9.9375L19.875 3.46875C20.25 2.8125 19.7812 1.96875 19.0312 1.96875H4.21875L3.28125 0H0V1.96875H2.01562L5.625 9.5625L4.26562 12C3.51562 13.3594 4.5 15 6 15H18V12.9844H6L7.125 10.9688H14.5781ZM5.15625 3.98438H17.3437L14.5781 9H7.54687L5.15625 3.98438ZM6 15.9844C4.92187 15.9844 4.03125 16.875 4.03125 18C4.03125 19.0781 4.92187 19.9688 6 19.9688C7.125 19.9688 8.01562 19.0781 8.01562 18C8.01562 16.875 7.125 15.9844 6 15.9844ZM16.0312 15.9844C14.9062 15.9844 14.0156 16.875 14.0156 18C14.0156 19.0781 14.9062 19.9688 16.0312 19.9688C17.1094 19.9688 18 19.0781 18 18C18 16.875 17.1094 15.9844 16.0312 15.9844Z" fill="#F2870D"/>
-                    </svg>
-                    <span class="header-resources_number">0</span>
-                </a>
-                <div class="cartContainer">
-                    <h3 class="cartContainer_title">Shopping Cart (3 items)</h3>
-                    <ul class="cartContainer-products">
-                        <li class="cartContainer-products-item">
-                            <img src="img/clothes/carritoprueba2.png" alt="Blazer in the summary" class="cartContainer-products_img">
-                            <div class="cartContainer-products-info">
-                                <h4 class="cartContainer-products-info_name">Merino Wool Blazer</h4>
-                                <span class="cartContainer-products-info_extra">Size: M • Color: Navy</span>
-                                <span class="cartContainer-products-info_price">$245.00</span>
-                            </div>
-                            <span class="cartContainer-products_remove">Remove</span>
-                        </li>
-                        <li class="cartContainer-products-item">
-                            <img src="img/clothes/carritoprueba1.png" alt="Blazer in the summary" class="cartContainer-products_img">
-                            <div class="cartContainer-products-info">
-                                <h4 class="cartContainer-products-info_name">Essential White Tee</h4>
-                                <span class="cartContainer-products-info_extra">Size: M • Color: Navy</span>
-                                <span class="cartContainer-products-info_price">$245.00</span>
-                            </div>
-                            <span class="cartContainer-products_remove">Remove</span>
-                        </li>
-                    </ul>
-                    <div class="cartContainer-bottom">
-                        <div class="cartContainer-bottom-total">
-                            <span class="cartContainer-bottom-total_txt">Subtotal:</span>
-                            <span class="cartContainer-bottom-total_price">$419.92</span>
-                        </div>
-                        <a href="carritoShipping.html" class="cartContainer-bottom_btn">Checkout</a>
-                        <a href="shoppingBag.html" class="cartContainer-bottom_toCart">View Cart</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        <a class="header-link" href="https://www.linkedin.com/in/jon-linaje-lia%C3%B1o-219754268/?trk=opento_sprofile_details">
+            <img class="header-link_img" src="img/Linkedin.svg" alt="Imagen con el logo de Linkedin">
+        </a>
     </header>
-
-    <main class="index">
-        <article class="index-start">
-            <div class="index-start-info">
-                <h1 class="index-start-info_title">New Season 2024</h1>
-                <span class="index-start-info_subtitle">Elevated Style <strong>Without Compromise</strong></span>
-                <p class="index-start-info_txt">Thoughtfully designed collections for the modern professional. Quality fabrics, timeless silhouettes, and effortless fit.</p>
+    <main class="main">
+        <section>
+            <div>
+                <h1>Sobre mi</h1>
+                <span>Hola, me presento, mi nombre es Jon Linaje Liaño. Tengo 21 años y actualmente estoy buscando trabajo. Me especializo en programacion, concretamente en desarrollo Front-end y unity. Abajo tiene diferente informacion acerca de mis estudios y premios que eh logrado. Para ver mis redes puede hacerlo haciendo click en los iconos que se encuentran arriba a la derecha y izquierda. En el de Youtube tengo videos que muestran varios de mis trabjos en Unity y Unreal Engine.</span>
             </div>
-            <div class="index-start-btn">
-                <a href="shop.html" class="index-start-btn_men">Shop Men's Collection</a>
-                <a href="shop.html" class="index-start-btn_women">Shop Women's Collection</a>
-            </div>
-        </article>
-
-        <section class="index-collections">
-            <h2 class="index-collections_title">Curated Collections</h2>
-            <div class="index-collections-info">
-                <span class="index-collections-info_txt">Discover pieces tailored for your lifestyle</span>
-                <a href="shop.html" class="index-collections-info_a">View All Categories</a>
-            </div>
-            <ul class="index-collections-content">
-                <li class="index-collections-content-item"><a href="detail.html">
-                    <img src="img/clothes/collections_one.png" alt="The office collection" class="index-collections-content_img">
-                    <h3 class="index-collections-content_name">The Office Edit</h3>
-                    <p class="index-collections-content_txt">Command the room with confidence.</p>
-                    <span class="index-collections-content_explore">Explore Now</span>
-                </a></li>
-                <li class="index-collections-content-item"><a href="detail.html">
-                    <img src="img/clothes/collections_two.png" alt="Weekend Comfort collection" class="index-collections-content-img">
-                    <h3 class="index-collections-content_name">Weekend Comfort</h3>
-                    <p class="index-collections-content_txt">Relaxed fits for your downtime.</p>
-                    <span class="index-collections-content_explore">Explore Now</span>
-                </a></li>
-                <li class="index-collections-content-item"><a href="detail.html">
-                    <img src="img/clothes/collections_three.png" alt="Evening Elegance collection" class="index-collections-content_img">
-                    <h3 class="index-collections-content_name">Evening Elegance</h3>
-                    <p class="index-collections-content_txt">Sophisticated styles for the night.</p>
-                    <span class="index-collections-content_explore">Explore Now</span>
-                </a></li>
-            </ul>
+            <img src="" alt="">
         </section>
 
-        <section class="index-arrivals">
-            <h2 class="index-arrivals_title">New Arrivals</h2>
-            <span class="index-arrivals_txt">Premium materials meet contemporary design in our latest arrivals for the season.</span>
-            <ul class="index-arrivals-list">
-                <li class="index-arrivals-list-item">
-                    <form action="#" method="post" class="index-arrivals-list-item-form">
-                        <a href="detail.html">
-                            <img src="img/clothes/arrival1.png" alt="A new Blazer in the catalogue" class="arrival-img">
-                        </a>
+        <section>
+            <h2>Premio Googaz</h2>
+            <span>Fui uno de los ganadores del premio de la diputacion foral de bizkaia “Googaz” en 2025.</span>
 
-                        <input type="checkbox" name="fav_arrival" value="favourite" id="id_favArrival1" class="fav-round" aria-label="Click to ad your favorite arrival 1">
-                        <button type="button" class="index-arrivals-list-item_btn">Quick Add</button>
-                    </form>
-
-                    <h3 class="index-arrivals-list-item_title">Merino Wool Blazer</h3>
-                    <span class="index-arrivals-list-item_txt">Navy Blue • Tailored Fit</span>    
-                    <span class="index-arrivals-list-item_price">$245.00</span>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <h3>Programacion C#</h3>
+                    <span>Principalmente me dedique en la programacion durante todo el proyecto. Programe toda la seccion de la calle y la conduccion y ayude con el tutorial, aparte de solucionar los bugs finales.</span>
                 </li>
-
-                <li class="index-arrivals-list-item">
-                    <form action="#" method="post" class="index-arrivals-list-item-form">
-                        <a href="detail.html">
-                            <img src="img/clothes/arrival2.png" alt="A new Dress in the catalogue" class="arrival-img">
-                        </a>
-
-                        <span class="arrival_extra">sale</span>
-                        <input type="checkbox" name="fav_arrival" value="favourite" id="id_favArrival2" class="fav-round" aria-label="Click to ad your favorite arrival 1">
-                        <button type="button" class="index-arrivals-list-item_btn">Quick Add</button>
-                    </form>
-
-                    <h3 class="index-arrivals-list-item_title">Silk Wrap Dress</h3>
-                    <span class="index-arrivals-list-item_txt">Emerald • Flowing Silhouette</span>
-
-                    <div class="offer">
-                        <span class="index-arrivals-list-item_price">$189.00</span>
-                        <span class="offer-aply">$225.00</span>
-                    </div>    
-                </li>
-
-                <li class="index-arrivals-list-item">
-                    <form action="#" method="post" class="index-arrivals-list-item-form">
-                        <a href="detail.html">
-                            <img src="img/clothes/arrival3.png" alt="A new Crewneck in the catalogue" class="arrival-img">
-                        </a>
-
-                        <input type="checkbox" name="fav_arrival" value="favourite" id="id_favArrival3" class="fav-round" aria-label="Click to ad your favorite arrival 1">
-                        <button type="button" class="index-arrivals-list-item_btn">Quick Add</button>
-                    </form>
-
-                    <h3 class="index-arrivals-list-item_title">Cashmere Crewneck</h3>
-                    <span class="index-arrivals-list-item_txt">Sand • 100% Cashmere</span>    
-                    <span class="index-arrivals-list-item_price">$160.00</span>
-                </li>
-
-                <li class="index-arrivals-list-item">
-                    <form action="#" method="post" class="index-arrivals-list-item-form">
-                        <a href="detail.html">
-                            <img src="img/clothes/arrival4.png" alt="A new Trouser in the catalogue" class="arrival-img">
-                        </a>
-
-                        <input type="checkbox" name="fav_arrival" value="favourite" id="id_favArrival4" class="fav-round" aria-label="Click to ad your favorite arrival 1">
-                        <button type="button" class="index-arrivals-list-item_btn">Quick Add</button>
-                    </form>
-
-                    <h3 class="index-arrivals-list-item_title">Structured Trouser</h3>
-                    <span class="index-arrivals-list-item_txt">Charcoal • Slim Cut</span>    
-                    <span class="index-arrivals-list-item_price">$125.00</span>
+                <li>
+                    <img src="" alt="">
+                    <h3>Modelos 3D</h3>
+                    <span>Tambien hice el modelo 3D de varios objetos que se encuentran en el videojuego. Ademas, me dedique a implementar todos los modelos 3D y animaciones dentro de Unity.</span>
                 </li>
             </ul>
         </section>
 
-        <div class="index-form">
-            <img src="img/email_icon.png" alt="imagen de un email">
-            <h2 class="index-form_title">Join the Inner Circle</h2>
-            <p class="index-form_txt">Get style tips, early access to new collections, and <strong>15% off your first order.</strong></p>
-            <form action="#" method="post" class="index-form-content">
-                <input id="id_join" name="join-email" type="email" autocomplete="email" placeholder="Enter your email address" class="index-form-content_email" aria-label="Click the put your email">
-                <button type="submit" class="index-form-content_btn">Subscribe</button>
-            </form>
-            <span class="index-form_extra">By subscribing, you agree to our Privacy Policy and Terms of Service.</span>
-        </div>
-
-        <section class="index-featured">
-            <h2 class="index-featured_title">As Featured In</h2>
-            <ul class="index-featured-list">
-                <li class="index-featured-list_item">VOGUE</li>
-                <li class="index-featured-list_item">GQ</li>
-                <li class="index-featured-list_item">ELLE</li>
-                <li class="index-featured-list_item">Harpers Bazaar</li>
-                <li class="index-featured-list_item">Forbes</li>
+        <section>
+            <h2>Mis Estudios</h2>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <h3>Desarrollo de Videojuegos</h3>
+                    <p>Harrobia Ikastola</p>
+                    <p>sept. 2022 – jun. 2025</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <h3>Desarrollo Front-End</h3>
+                    <p>Ipartek Formación</p>
+                    <p>ener. 2026 – may. 2026</p>
+                </li>
+                <li>
+                    <img src="" alt="">
+                    <h3>Bachiller Cientifico</h3>
+                    <p>IES Saturnino de la Peña BHI</p>
+                    <p>sept. 2020 – jun. 2022</p>
+                </li>
             </ul>
         </section>
     </main>
-
     <footer class="footer">
-        <div class="footer-superior">
-            <div class="footer-superior_col">
-                <h2 class="footer-superior-titulo">VIBRANT<strong>MODA</strong></h2>
-                <address class="footer-superior_col_content">
-                    <p class="txt_footer">Redefining luxury through sustainability and timeless craftsmanship for the modern professional.</p>
-                </address>
-                <ul class="footer-superior_redes">
-                    <li class="footer-superior_redes_bg_camera">
-                        <a href="#" title="link a red social"></a>
-                    </li>
-                    <li class="footer-superior_redes_bg_fc">
-                        <a href="#" title="link a red social"></a>
-                    </li>
-                    <li class="footer-superior_redes_bg_businnes">
-                        <a href="#" title="link a red social"></a>
-                    </li>
-                </ul>
-            </div>
-    
-            <div class="footer-superior_col">
-                <h2 class="footer-superior-titulo">Shopping</h2>
-                <ul class="footer-superior_col_content">
-                    <li><a href="shop.html">Women's Collection</a></li>
-                    <li><a href="index.html">Men's Collection</a></li>
-                    <li><a href="shop.html">Sale & Outlet</a></li>
-                    <li><a href="index.html">Personal Styling</a></li>
-                </ul>
-            </div>
-    
-            <div class="footer-superior_col">
-                <h2 class="footer-superior-titulo">Customer Care</h2>
-                <ul class="footer-superior_col_content">
-                    <li><a href="detail.html">Size Guide</a></li>
-                    <li><a href="index.html">Returns & Exchanges</a></li>
-                    <li><a href="shop.html">Shipping Information</a></li>
-                    <li><a href="carrito.html">Track Your Order</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-superior_col">
-                <h2 class="footer-superior-titulo">Stay Updated</h2>
-                <p class="form_txt">Join our newsletter for exclusive early access and luxury lifestyle content.</p>
-                <form action="#" method="post" class="footer-superior_form">
-                    <input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Email Address" class="form_email" aria-label="Write your email">
-                    <button type="submit" class="form_button">Subscribe</button>
-                </form>
-            </div>
+        <div class="footer-container">
+            <ul class="footer-container-list">
+                <li class="footer-container-list_item title">Social Media</li>
+                <li class="footer-container-list_item">Youtube</li>
+                <li class="footer-container-list_item">LinkdIn</li>
+            </ul>
+            <ul class="footer-container-list">
+                <li class="footer-container-list_item title">Contact</li>
+                <li class="footer-container-list_item">jonlinaje00@gmail.com</li>
+                <li class="footer-container-list_item">555 55 55 55</li>
+            </ul>
         </div>
-
-        <div class="footer-inferior">
-            <div class="footer-copy">
-                <p>© 2026 EliteWear Luxury Ltd. All rights reserved.</p>
-            </div>
-
-            <nav class="footer-inferior-menu">
-                <a href="index.html" class="footer-inferior-menu_a">Privacy Policy</a>
-                <a href="about.html" class="footer-inferior-menu_a">Terms of Service</a>
-                <a href="shop.html" class="footer-inferior-menu_a">Accessibility</a>
-            </nav>            
-        </div>
+        <span class="footer_txt">Let`s talk</span>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="js/globalJss.js"></script>
-    <script src="js/IndexJss.js"></script>
-    <script src="js/IndexJQueryVersion.js"></script>
 </body>
 
 </html>
