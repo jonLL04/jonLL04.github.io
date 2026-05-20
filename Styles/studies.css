@@ -1,0 +1,65 @@
+.studies {
+    background-color: #D99C56;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .studies_title {
+        font-weight: 800;
+        font-size: 64px;
+        margin-bottom: 87px;
+    }
+
+    .studies-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 76px;
+        margin-bottom: 75px;
+    }
+
+        .studies-section_title {
+            width: 650px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 36px;
+        }
+
+        .studies-section-container {
+            display: flex;
+            flex-direction: row;
+            gap: 62px;
+        }
+
+            .studies-section_img {
+                width: 568px;
+                height: 568px;
+            }
+
+            .studies-section-info {
+                width: 586px;
+                display: flex;
+                flex-direction: column;
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+    .studies-experience {
+        width: 1070px;
+        padding: 46px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border: 1px solid #000000;
+        background-color: #F4F4F4;
+    }
+
+        .studies-experience_txt,
+        .studies-experience_time {
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+        }
