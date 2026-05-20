@@ -4,8 +4,7 @@
 
 body {
     font: 600 14px "Lexend", sans-serif;
-    color: #334155;
-    background-color: F4F4F4;
+    color: #000000;
 }
 
 .header {
@@ -14,6 +13,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #F4F4F4;
 }
 
     .header-link {
@@ -52,6 +54,142 @@ body {
 .main {
     background-color: #D99C56;
 }
+
+    .main-about {
+        padding: 90px 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+        .main-about_container {
+            width: 605px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+            .main-about_title {
+                font-weight: 800;
+                font-size: 64px;
+            }
+
+            .main-about_txt {
+                font-weight: 400;
+                font-size: 24px;
+            }
+
+        .main_myimage {
+            width: 620px;
+            height: 620px;
+        }
+    
+    .main-prize {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 150px;
+        background-color: #F4F4F4;
+    }
+
+        .prize_title {
+            font-weight: 800;
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+
+        .prize_txt {
+            width: 577px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 33px;
+        }
+
+        .prize-list {
+            display: flex;
+            flex-direction: row;
+            gap: 190px;
+        }
+
+            .prize-list-item {
+                padding: 20px 48px;
+                width: 475px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid #000000;
+            }
+
+                .prize-list-item_img {
+                    width: 380px;
+                    height: 357px;
+                    margin-bottom: 34px;
+                    border-radius: 5px;
+                }
+
+                .prize-list-item_title {
+                    text-align: center;
+                    font-weight: 800;
+                    font-size: 40px;
+                    margin-bottom: 18px;
+                }
+
+                .prize-list-item_txt {
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+
+    .main-studies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 56px;
+    }
+
+        .studies_title {
+            font-weight: 800;
+            font-size: 64px;
+            margin-bottom: 70px;
+        }
+
+        .studies-list {
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+        }
+
+            .studies-list-item {
+                width: 402px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #000000;
+                background-color: #F4F4F4;
+                cursor: pointer;
+            }
+
+                .studies-list-item_img {
+                    width: 402px;
+                    height: 287px;
+                    margin-bottom: 23px;
+                }
+
+                .studies-list-item_title {
+                    font-weight: 400;
+                    font-size: 28px;
+                    margin-left: 32px;
+                    margin-bottom: 28px;
+                }
+
+                .studies-list-item_place,
+                .studies-list-item_date {
+                    font-weight: 400;
+                    font-size: 22px;
+                    margin-left: 32px;
+                    margin-bottom: 26px;
+                }
 
 
 .footer {
