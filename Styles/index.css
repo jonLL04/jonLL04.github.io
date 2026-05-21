@@ -3,14 +3,14 @@
 }
 
     .main-about {
-        padding: 90px 50px 110px;
+        padding: 60px 50px 110px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 100px;
     
-        background: linear-gradient(135deg,#e1a561 0%,#c47d32 100%);    
+        background: linear-gradient(135deg,#e8ae6b 0%,#c47d32 100%);    
         position: relative;
         overflow: hidden;
 
@@ -58,12 +58,15 @@
                 font-weight: 300;
                 font-size: 24px;
             }
+                .main-about_txt strong {
+                    font-weight: 600;
+                }
 
         .main_myimage {
             width: 620px;
             height: 620px;
-            border-radius: 10px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border-radius: 45% 45% 5% 5%;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.326);
         }
     
     .main-prize {
@@ -73,7 +76,8 @@
         padding: 10px 150px 70px;
     }
 
-        .prize_title {
+        .prize_title,
+        .portfolio_title {
             font-weight: 800;
             font-size: 64px;
             margin-bottom: 40px;
@@ -145,7 +149,7 @@
         flex-direction: column;
         align-items: center;
         padding: 70px 56px;
-        background: linear-gradient(135deg,#e1a561 0%,#c47d32 100%);
+        background: linear-gradient(135deg,#c87c2b 0%,#c1915a 100%);
     }
 
         .studies_title {
@@ -190,6 +194,8 @@
                 transition: 0.3s;
             } .studies-list-item:hover {
                 scale: 1.05;
+                box-shadow: 10px 10px 10px rgba(31, 117, 182, 0.45);
+
             } 
             
                 .studies-list-item a {
@@ -217,3 +223,16 @@
                     margin-left: 32px;
                     margin-bottom: 26px;
                 }
+
+    .main-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 56px;
+    }
+
+        .portfolio-list-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }

@@ -95,6 +95,11 @@ body {
             font-size: 20px;
         }
 
+            .footer-container-list_item a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
     .footer_txt {
         font-weight: 400;
         font-size: 64px;
