@@ -246,6 +246,15 @@
             background-color: #D99C56;
         }
 
+        .portfolio_txt {
+            margin-top: 20px;
+            width: 1000px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
         .portfolio-list-item {
             margin-top: 30px;
             display: flex;
@@ -296,7 +305,7 @@
         .portfolio_arrow {
             position: absolute;
             left: 20px;
-            top: 336px;
+            top: 536px;
     
             display: flex;
             flex-direction: row;
@@ -304,3 +313,7 @@
     
             width: calc(100% - 45px + 1px);
         }
+
+.disable {
+    display: none;
+}

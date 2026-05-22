@@ -20,7 +20,7 @@
             <img class="header-link_img" src="img/Youtube.svg" alt="Imagen con el logo de Youtube">
         </a>
         <nav class="header-menu">
-            <a class="header-menu_item" href="Proyectos/JQueryExample/index.html">Inicio</a>
+            <a class="header-menu_item" href="#about">Inicio</a>
             <a class="header-menu_item" href="#prize">Premio</a>
             <a class="header-menu_item" href="#studies">Estudios</a>
             <a class="header-menu_item" href="#portfolio">Portfolio</a>
@@ -30,7 +30,7 @@
         </a>
     </header>
     <main class="main">
-        <section class="main-about">
+        <section class="main-about" id="about">
             <div class="main-about_container">
                 <h1 class="main-about_title">Sobre Mi</h1>
                 <span class="main-about_txt">Hola, me presento, mi nombre es Jon Linaje Liaño. Tengo 21 años y actualmente estoy buscando trabajo. Me especializo en programacion, concretamente en <strong>desarrollo Front-end y unity</strong>. Abajo tiene diferente informacion acerca de mis estudios y premios que eh logrado. Para ver mis redes puede hacerlo haciendo click en los iconos que se encuentran arriba a la derecha y izquierda. En el de Youtube tengo videos que muestran varios de mis trabajos en Unity y Unreal Engine.</span>
@@ -82,9 +82,10 @@
 
         <section class="main-portfolio" id="portfolio">
             <h2 class="portfolio_title">Mis proyectos/trabajos</h2>
+            <p class="portfolio_txt">Aqui podra ver mis proyectos relacionados al desarrollo FrontEnd, para poder acceder a los trabajos solo debe de hacer click en la imagen, y las flechas de los costados estan para que navege entre mis proyectos y asi pueda selecionar el que desea.</p>
             <nav class="portfolio_arrow">
-                <span><img src="img/arrow2.png" alt="arrowLeft"></span>
-                <span><img src="img/arrow.png" alt="arrowRight"></span>
+                <span><img src="img/arrow2.png" alt="arrowLeft" id="arrowBack"></span>
+                <span><img src="img/arrow.png" alt="arrowRight" id="arrowNext"></span>
             </nav>
             <ul class="portfolio-list">
                 <li class="portfolio-list-item">
@@ -94,19 +95,26 @@
                     </div>
                     <a href="Proyectos/VibrantModa/index.html"><img src="img/vibrantModa.png" alt="Imagen relacionada a mi proyecto Vibrant Moda" class="portfolio-list-item_img"></a>
                 </li>
-                <li class="portfolio-list-item">
+                <li class="portfolio-list-item disable">
                     <div class="portfolio-list-item_info">
                         <h3 class="portfolio-list-item_title">Zay Shop</h3>
                         <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5 y CSS3. El proyecto se basa en la creación de un sitio web para una tienda online, pensadas para pantallas de PC de un tamaño de ancho de 1360 pixeles.</span>
                     </div>
                     <a href="Proyectos/ZayShop/index.html"><img src="img/zayShop.png" alt="Imagen relacionada a mi proyecto Zay Shop" class="portfolio-list-item_img"></a>
                 </li>
-                <li class="portfolio-list-item">
+                <li class="portfolio-list-item disable">
                     <div class="portfolio-list-item_info">
                         <h3 class="portfolio-list-item_title">Forms Showcase</h3>
                         <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5 y CSS3. El proyecto se basa en la creación de una pagina llena de formularios para demostrar mis habilidades a la hora de modificarlos, pensadas para pantallas de PC de un tamaño de ancho de 1024 pixeles.</span>
                     </div>
                     <a href="Proyectos/Forms/index.html"><img src="img/forms.png" alt="Imagen relacionada a mi proyecto Forms" class="portfolio-list-item_img"></a>
+                </li>
+                <li class="portfolio-list-item disable">
+                    <div class="portfolio-list-item_info">
+                        <h3 class="portfolio-list-item_title">Landing Work</h3>
+                        <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5, CSS3, javaScript y JQuery. El proyecto se basa en la creación de una pagina donde lo mas importante es que esta echa principalmente en JQuery y su objetivo es mostrar mi habilidad en ese campo, pensada para todo tipo de pantallas.</span>
+                    </div>
+                    <a href="Proyectos/JQueryExample/index.html"><img src="img/jquery.png" alt="Imagen relacionada a mi proyecto donde el JQuery es lo mas usado" class="portfolio-list-item_img"></a>
                 </li>
             </ul>
         </section>
