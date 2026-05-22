@@ -301,6 +301,11 @@
                     border-radius: 5px;
                     box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
                 }
+
+                .portfolio-list-item_img:hover {
+                    scale: 1.02;
+                    box-shadow: 10px 10px 10px rgba(31, 117, 182, 0.45);
+                }
                 
         .portfolio_arrow {
             position: absolute;
