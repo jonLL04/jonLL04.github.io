@@ -46,7 +46,14 @@ body {
             text-align: center;
 
             border-radius: 10px;
+            color: #e48d2a;
             background-color: #334155;
+            transition: all 0.3s ease;
+        }
+
+        .header-menu_item:hover {
+            color: #ff8800;
+            background-color: #131e30;
         }
 
 

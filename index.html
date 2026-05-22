@@ -21,9 +21,9 @@
         </a>
         <nav class="header-menu">
             <a class="header-menu_item" href="Proyectos/JQueryExample/index.html">Inicio</a>
-            <a class="header-menu_item" href="Proyectos/VibrantModa/index.html">Premio</a>
-            <a class="header-menu_item" href="Proyectos/ZayShop/index.html">Estudios</a>
-            <a class="header-menu_item" href="Proyectos/Forms/index.html">Forms</a>
+            <a class="header-menu_item" href="#prize">Premio</a>
+            <a class="header-menu_item" href="#studies">Estudios</a>
+            <a class="header-menu_item" href="#portfolio">Portfolio</a>
         </nav>
         <a class="header-link" href="https://www.linkedin.com/in/jon-linaje-lia%C3%B1o-219754268/?trk=opento_sprofile_details">
             <img class="header-link_img" src="img/Linkedin.svg" alt="Imagen con el logo de Linkedin">
@@ -38,7 +38,7 @@
             <img src="img/yo.png" alt="An image of me" class="main_myimage">
         </section>
 
-        <section class="main-prize">
+        <section class="main-prize" id="prize">
             <h2 class="prize_title">Premio Googaz</h2>
             <span class="prize_txt">Fui uno de los ganadores del premio de la diputacion foral de bizkaia “Googaz” en 2025.</span>
 
@@ -56,7 +56,7 @@
             </ul>
         </section>
 
-        <section class="main-studies">
+        <section class="main-studies" id="studies">
             <h2 class="studies_title">Mis Estudios</h2>
             <ul class="studies-list">
                 <li class="studies-list-item"><a href="videogameStudie.html">
@@ -80,21 +80,36 @@
             </ul>
         </section>
 
-        <section class="main-portfolio">
+        <section class="main-portfolio" id="portfolio">
             <h2 class="portfolio_title">Mis proyectos/trabajos</h2>
-            <nav class="index-slider_arrow">
-                <a href="#"><img src="img/arrow2.png" alt="arrowLeft"></a>
-                <a href="#"><img src="img/arrow.png" alt="arrowRight"></a>
+            <nav class="portfolio_arrow">
+                <span><img src="img/arrow2.png" alt="arrowLeft"></span>
+                <span><img src="img/arrow.png" alt="arrowRight"></span>
             </nav>
             <ul class="portfolio-list">
                 <li class="portfolio-list-item">
                     <div class="portfolio-list-item_info">
                         <h3 class="portfolio-list-item_title">Vibrant Moda</h3>
-                        <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5, CSS3, Javascript y JQuery.</span>
+                        <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5, CSS3, Javascript y JQuery. El proyecto se basa en la creación de un sitio web para una tienda de moda online, pensadas para pantallas de PC de un tamaño de ancho de 1440 pixeles. Las aplicaciones de java usadas son para cuando das al corazon a un producto, en los formularios del proceso de pago, y en la tienda con sus filtros, asi como el boton de cargar mas productos.</span>
                     </div>
-                    <a href="Proyectos/VibrantModa/index.html"><img src="img/vibrantmoda.png" alt="Imagen relacionada a mi proyecto Vibrant Moda" class="portfolio-list-item_img"></a>
+                    <a href="Proyectos/VibrantModa/index.html"><img src="img/vibrantModa.png" alt="Imagen relacionada a mi proyecto Vibrant Moda" class="portfolio-list-item_img"></a>
                 </li>
-        </secttion>
+                <li class="portfolio-list-item">
+                    <div class="portfolio-list-item_info">
+                        <h3 class="portfolio-list-item_title">Zay Shop</h3>
+                        <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5 y CSS3. El proyecto se basa en la creación de un sitio web para una tienda online, pensadas para pantallas de PC de un tamaño de ancho de 1360 pixeles.</span>
+                    </div>
+                    <a href="Proyectos/ZayShop/index.html"><img src="img/zayShop.png" alt="Imagen relacionada a mi proyecto Zay Shop" class="portfolio-list-item_img"></a>
+                </li>
+                <li class="portfolio-list-item">
+                    <div class="portfolio-list-item_info">
+                        <h3 class="portfolio-list-item_title">Forms Showcase</h3>
+                        <span class="portfolio-list-item_txt">Proyecto de desarrollo FrontEnd, aqui aplico HTML5 y CSS3. El proyecto se basa en la creación de una pagina llena de formularios para demostrar mis habilidades a la hora de modificarlos, pensadas para pantallas de PC de un tamaño de ancho de 1024 pixeles.</span>
+                    </div>
+                    <a href="Proyectos/Forms/index.html"><img src="img/forms.png" alt="Imagen relacionada a mi proyecto Forms" class="portfolio-list-item_img"></a>
+                </li>
+            </ul>
+        </section>
 
     </main>
     <footer class="footer">
@@ -112,6 +127,8 @@
         </div>
         <span class="footer_txt">Let`s talk</span>
     </footer>
+
+    <script src="js/IndexJss.js"></script>
 </body>
 
 </html>
