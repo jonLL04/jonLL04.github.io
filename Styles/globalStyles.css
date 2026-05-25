@@ -107,6 +107,10 @@ body {
                 text-decoration: none;
             }
 
+            .footer-container-list_item a:hover {
+                color: #cdcdcd;
+            }
+
     .footer_txt {
         font-weight: 400;
         font-size: 64px;

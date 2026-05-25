@@ -4,6 +4,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /*--u: 2vmin;
+           --r: calc(var(--u) / 1.75);
+           --c0: #2e2409; 
+           --c1: #684c0f80;
+           --rad: var(--c0) 0 var(--r), #fff0 calc(var(--r) + 0.1vmin) 100%;
+           --rad2: var(--c1) 0 var(--r), #fff0 calc(var(--r) + 1vmin) 100%;
+           --lin: #fff0 0% 23%, var(--c0) 23% 27%, #fff0 27% 73%, var(--c0) 73% 77%, #fff0 77% 100%;
+           --lin2: #fff0 0% 12%, var(--c1) 15% 19%, #fff0 22% 62%, var(--c1) 65% 69%, #fff0 72% 92%;
+           --lin3: #fff0 0% 12%, var(--c1) 15% 19%, #fff0 22% 62%, var(--c1) 65% 69%, #fff0 72% 100%;
+           --gp: 50%/calc(var(--u) * 10) calc(var(--u) * 10);
+           background: 
+               radial-gradient(circle at 50% 100%, var(--rad)) var(--gp),
+               radial-gradient(circle at 50% 0%, var(--rad)) var(--gp),
+               radial-gradient(circle at 100% 50%, var(--rad)) var(--gp),
+               radial-gradient(circle at 0% 50%, var(--rad)) var(--gp),
+               linear-gradient(-135deg, var(--lin)) var(--gp),
+               linear-gradient(225deg, var(--lin)) var(--gp),
+               linear-gradient(-225deg, var(--lin)) var(--gp),
+               linear-gradient(135deg, var(--lin)) var(--gp),
+               radial-gradient(circle at 34% 0%, var(--rad2)) var(--gp),
+               radial-gradient(circle at 34% 100%, var(--rad2)) var(--gp),
+               radial-gradient(circle at 84% 50%, var(--rad2)) var(--gp),
+               linear-gradient(45deg, var(--lin3)) var(--gp),
+               linear-gradient(135deg, var(--lin2)) var(--gp),
+               linear-gradient(25deg, #6b520d 10%, #de9918 , #724004 80%);
+         background-color: var(--c2);*/
 }
 
     .studies_title {
