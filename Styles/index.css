@@ -320,7 +320,7 @@
                 }
 
                 .studies-list_title {
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 26px;
                     margin-left: 32px;
                     margin-bottom: 28px;
@@ -444,4 +444,248 @@
 
 .disable {
     display: none;
+}
+
+@media (max-width: 450px) {
+    .main-about {
+        padding: 30px 40px 32px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    } 
+        .main-about::after {
+            content: none;
+        }
+
+        .main-about_container {
+            width: 368px;
+        }
+
+            .main-about_title {
+                font-size: 40px;
+            }
+                .main-about_title::before {
+                    width: 210px;
+                    height: 3px;
+                }
+
+            .main-about_txt {
+                font-size: 16px;
+            }
+
+        .main_myimage {
+            width: 368px;
+            height: 368px;
+        }
+    
+    .main-prize {
+        padding: 30px 35px;
+    }
+
+        .prize_title,
+        .portfolio_title {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+            .prize_title::after {
+                width: 150px;
+                height: 4px;    
+                left: 75px;
+            }
+
+        .prize_txt {
+            width: 390px;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .prize-list {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+            [class*="prize-list-container"] {
+                padding: 18px 25px;
+                width: 380px;
+            }
+
+                [class*="prize-list-container"]::before {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .prize-list-item_img {
+                    width: 330px;
+                    height: 310px;
+                    margin-bottom: 30px;
+                }
+
+                .prize-list-item_title {
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                }
+
+                .prize-list-item_txt {
+                    font-size: 16px;
+                }
+
+    .main-studies {
+        padding: 40px 24px;
+    }
+    
+        .main-studies::after {
+            top: 40px;
+            right: 10px;
+    
+            width: 60px;
+            height: 60px;
+
+            animation: studiesCirclemove 6s ease-in-out infinite;
+        }        
+            @keyframes studiesCirclemove {
+                0% {
+                    transform: translateY(-25px);
+                }
+            
+                50% {
+                    transform: translateY(-5px);
+                }
+            
+                100% {
+                    transform: translateY(-25px);
+                }
+            }
+
+        .main-studies::before {
+            bottom: 30px;
+            left: 1px;
+    
+            width: 100px;
+            height: 100px;
+        }
+
+        .studies_title {
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+            .studies_title::after {
+                width: 140px;
+                height: 4px;
+                left: 45px;
+            }
+
+        .studies_txt {
+            width: 390px;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .studies-list {
+            flex-direction: column;
+            gap: 45px;
+        }
+
+            [class*="studies-list-item"] {
+                width: 402px;
+                height: 480px;
+            } [class*="studies-list-item"]:hover {
+                scale: 1.01;
+                box-shadow: 10px 10px 10px rgba(31, 117, 182, 0.45);
+            } 
+
+            [class*="studies-list-item"]::after{
+                height: 10px;
+            }
+
+                .studies-list_title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    margin-left: 32px;
+                    margin-bottom: 24px;
+                }
+
+                .studies-list_place,
+                .studies-list_date {
+                    font-size: 18px;
+                    margin-left: 32px;
+                    margin-bottom: 22px;
+                }
+
+    .main-portfolio {        
+        padding: 40px 20px;
+    }
+
+        .portfolio_title::after {
+            width: 160px;
+            height: 4px;
+            bottom: -20px;
+            left: 120px;
+        }
+
+        .portfolio_txt {
+            width: 390px;
+
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .portfolio-list-item {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+
+                .portfolio-list-item_title {
+                    font-weight: 600;
+                    font-size: 24px;
+                }
+
+                    .portfolio-list-item_title::after {
+                        width: 60px;
+                        height: 3px;
+                
+                        bottom: -9px;
+                        left: 5px;
+                    }
+
+                .portfolio-list-item_txt {
+                    width: 390px;
+                    font-size: 16px;
+                }
+
+                .portfolio-list-item_img {
+                    width: 400px;
+                    height: 220px;
+                }
+
+                .portfolio-list-item_img:hover {
+                    scale: 1.01;
+                }
+                
+        .portfolio_arrow {
+            position: absolute;
+            left: 20px;
+            top: 536px;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+            width: calc(100% - 45px + 1px);
+        }
+
+        #arrowBack,
+        #arrowNext {
+            width: 45px;
+            height: 45px;
+            padding: 6px 12px;
+
+            border: 1px solid #000000;
+            border-radius: 50%;
+            background-color: #ffffff;
+            box-shadow: 1px 1.5px 1px 2px rgba(0,0,0,0.15);
+        }
 }
