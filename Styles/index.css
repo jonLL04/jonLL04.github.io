@@ -446,6 +446,172 @@
     display: none;
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1400px) {
+
+    /* ===================== */
+    /* ABOUT */
+    /* ===================== */
+
+    .main-about {
+        padding: 50px 40px 90px;
+        gap: 70px;
+    }
+
+    .main-about_container {
+        width: 520px;
+        gap: 28px;
+    }
+
+    .main-about_title {
+        font-size: 54px;
+    }
+
+    .main-about_txt {
+        font-size: 20px;
+    }
+
+    .main_myimage {
+        width: 520px;
+        height: 520px;
+    }
+
+    /* ===================== */
+    /* PRIZE */
+    /* ===================== */
+
+    .main-prize {
+        padding: 10px 100px 60px;
+    }
+
+    .prize_title,
+    .portfolio_title {
+        font-size: 54px;
+    }
+
+    .prize_title::after {
+        width: 180px;
+        left: 90px;
+    }
+
+    .prize_txt {
+        width: 520px;
+        font-size: 20px;
+    }
+
+    .prize-list {
+        gap: 120px;
+    }
+
+    [class*="prize-list-container"] {
+        width: 420px;
+        padding: 20px 35px;
+    }
+
+    .prize-list-item_img {
+        width: 340px;
+        height: 320px;
+    }
+
+    .prize-list-item_title {
+        font-size: 34px;
+    }
+
+    .prize-list-item_txt {
+        font-size: 20px;
+    }
+
+    /* ===================== */
+    /* STUDIES */
+    /* ===================== */
+
+    .main-studies {
+        padding: 60px 40px;
+    }
+
+    .studies_title {
+        font-size: 54px;
+    }
+
+    .studies_title::after {
+        width: 180px;
+        left: 70px;
+    }
+
+    .studies_txt {
+        width: 750px;
+        font-size: 20px;
+    }
+
+    .studies-list {
+        gap: 50px;
+    }
+
+    [class*="studies-list-item"] {
+        width: 360px;
+        height: 460px;
+    }
+
+    .studies-list_img {
+        width: 360px;
+        height: 260px;
+    }
+
+    .studies-list_title {
+        font-size: 24px;
+    }
+
+    .studies-list_place,
+    .studies-list_date {
+        font-size: 18px;
+    }
+
+    /* ===================== */
+    /* PORTFOLIO */
+    /* ===================== */
+
+    .main-portfolio {
+        padding: 60px 40px;
+    }
+
+    .portfolio_title::after {
+        width: 200px;
+        left: 150px;
+    }
+
+    .portfolio_txt {
+        width: 800px;
+        font-size: 20px;
+    }
+
+    .portfolio-list-item {
+        gap: 50px;
+    }
+
+    .portfolio-list-item_title {
+        font-size: 28px;
+    }
+
+    .portfolio-list-item_txt {
+        width: 520px;
+        font-size: 18px;
+    }
+
+    .portfolio-list-item_img {
+        width: 520px;
+        height: 310px;
+    }
+
+    .portfolio_arrow {
+        top: 500px;
+    }
+
+    #arrowBack,
+    #arrowNext {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 @media (max-width: 450px) {
     * {
         box-sizing: border-box;
